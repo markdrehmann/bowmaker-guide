@@ -24,8 +24,12 @@
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.drehmann-bows-link {
+  color: #61dafb; 
+}
+
+a:hover {
+  color: lightgray;
 }
 
 @keyframes App-logo-spin {
