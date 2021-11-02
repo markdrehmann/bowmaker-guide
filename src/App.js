@@ -7,6 +7,7 @@ function App() {
         <h1>
           The Bowmaker's Guide
         </h1>
+        <h2>Going to make a pseudo - L'Archet?</h2>
         <a
           className="drehmann-bows-link"
           href="https://www.markdrehmannbows.com/"
