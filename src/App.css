@@ -1,5 +1,14 @@
 .App {
   text-align: center;
+  background-color: #abaf93;
+  min-height: 100vh;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: center; */ /* THIS LINE CENTERS THINGS VERTICALLY */
+  font-size: calc(10px + 2vmin);
+  /* color: white; */
 }
 
 .App-logo {
@@ -13,7 +22,7 @@
   }
 }
 
-.App-header {
+/* .App-header {
   background-color: #282c34;
   min-height: 100vh;
   display: flex;
@@ -22,10 +31,10 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
-}
+} */
 
 .drehmann-bows-link {
-  color: #61dafb; 
+  color: #3a8530; 
 }
 
 a:hover {
