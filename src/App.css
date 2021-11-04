@@ -1,6 +1,6 @@
 .App {
   text-align: center;
-  background-color: #abaf93;
+  background-color: #dfe4c6;
   min-height: 100vh;
   height: auto;
   display: flex;
@@ -38,7 +38,7 @@
 }
 
 a:hover {
-  color: lightgray;
+  color: rgb(104, 104, 104);
 }
 
 @keyframes App-logo-spin {
