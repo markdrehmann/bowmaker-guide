@@ -1,0 +1,2 @@
+class BowPhotosController < ApplicationController
+end

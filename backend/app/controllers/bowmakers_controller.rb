@@ -1,0 +1,2 @@
+class BowmakersController < ApplicationController
+end
