@@ -1,6 +1,6 @@
 .App {
   text-align: center;
-  background-color: #dfe4c6;
+  background-color: #f6f8ea;
   min-height: 100vh;
   height: auto;
   display: flex;
@@ -34,7 +34,7 @@
 } */
 
 .drehmann-bows-link {
-  color: #3a8530; 
+  color: #9b7244; 
 }
 
 a:hover {
