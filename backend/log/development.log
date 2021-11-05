@@ -31,3 +31,40 @@ FOREIGN KEY ("bowmaker_id")
   [1m[36mTRANSACTION (3.4ms)[0m  [1m[36mcommit transaction[0m
   [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
   [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (3.7ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mBowmaker Load (3.0ms)[0m  [1m[34mSELECT "bowmakers".* FROM "bowmakers" /* loading for inspect */ LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "bowmakers"[0m
+  [1m[35m (2.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "bow_photos"[0m
+  [1m[36mBowDrawing Load (0.6ms)[0m  [1m[34mSELECT "bow_drawings".* FROM "bow_drawings" /* loading for inspect */ LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[35m (2.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "bowmakers"[0m
+  [1m[36mTRANSACTION (3.5ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBowmaker Create (3.4ms)[0m  [1m[32mINSERT INTO "bowmakers" ("first_name", "last_name", "birth_year", "year_of_death", "biography", "notes", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["first_name", "Francois Xavier"], ["last_name", "Tourte"], ["birth_year", 1748], ["year_of_death", 1835], ["biography", "For now, this is mostly a small filler bio. Francois Tourte invented the modern bow. He made the camber, or curve, of the bow concave rather than convex, he invented the ferrule to hold the hair in a flat band, he standardized the length, weight, and balance of the bow, as well as many other improvements. He is the father of the modern bow."], ["notes", "This is the notes section, empty for now, this is filler."], ["created_at", "2021-11-04 20:03:28.570205"], ["updated_at", "2021-11-04 20:03:28.570205"]]
+  [1m[36mTRANSACTION (3.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mBowmaker Load (0.5ms)[0m  [1m[34mSELECT "bowmakers".* FROM "bowmakers" ORDER BY "bowmakers"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBowmaker Create (0.9ms)[0m  [1m[32mINSERT INTO "bowmakers" ("first_name", "last_name", "birth_year", "year_of_death", "biography", "notes", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["first_name", "Jean Pierre Marie"], ["last_name", "Persoit"], ["birth_year", 1783], ["year_of_death", 1854], ["biography", "An early and great bowmaker, Persoit was heavily influenced by Francois Xavier Tourte. He made many fine bows, and was one of the first bowmakers to work for J.B. Vuillaume. While working there, he trained Dominique Peccatte, another one of the finest bowmakers to have lived. Persoit's brand -- P  R S -- was a mystery for many years until someone realized that it was a 'PARIS' brand with the 'A' and 'I' filed away. If you look very closely at his brand, you can see where a file touched the right lower leg of the 'R'."], ["notes", "Notes section, empty for now"], ["created_at", "2021-11-04 20:15:30.366396"], ["updated_at", "2021-11-04 20:15:30.366396"]]
+  [1m[36mTRANSACTION (3.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "bowmakers"[0m
+  [1m[36mBowDrawing Load (2.8ms)[0m  [1m[34mSELECT "bow_drawings".* FROM "bow_drawings" WHERE "bow_drawings"."bowmaker_id" = ? /* loading for inspect */ LIMIT ?[0m  [["bowmaker_id", 1], ["LIMIT", 11]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBowDrawing Create (0.8ms)[0m  [1m[32mINSERT INTO "bow_drawings" ("url", "bowmaker_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["url", "https://drive.google.com/uc?export=view&id=1B9hyRJsbBiMuknzhCVtoniczGpBRNn8s"], ["bowmaker_id", 1], ["created_at", "2021-11-04 20:18:10.173047"], ["updated_at", "2021-11-04 20:18:10.173047"]]
+  [1m[36mTRANSACTION (3.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mBowDrawing Load (0.4ms)[0m  [1m[34mSELECT "bow_drawings".* FROM "bow_drawings" ORDER BY "bow_drawings"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+Started GET "/bowmakers" for ::1 at 2021-11-04 13:24:53 -0700
+  [1m[35m (3.7ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by BowmakersController#index as HTML
+  [1m[36mBowmaker Load (0.4ms)[0m  [1m[34mSELECT "bowmakers".* FROM "bowmakers"[0m
+  ↳ app/controllers/bowmakers_controller.rb:4:in `index'
+Completed 200 OK in 60ms (Views: 20.6ms | ActiveRecord: 1.1ms | Allocations: 11498)
+
+
+Started GET "/bowmakers" for ::1 at 2021-11-04 13:28:50 -0700
+Processing by BowmakersController#index as HTML
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/bowmakers_controller.rb:4:in `index'
+  [1m[36mBowmaker Load (0.2ms)[0m  [1m[34mSELECT "bowmakers".* FROM "bowmakers"[0m
+  ↳ app/controllers/bowmakers_controller.rb:4:in `index'
+Completed 200 OK in 28ms (Views: 18.6ms | ActiveRecord: 1.6ms | Allocations: 7641)
+
+
