@@ -1,9 +1,11 @@
 import './App.css';
+import Head from './components/Head';
 
 function App() {
   return (
     <div className="App">
       {/* <header className="App-header"></header> */}
+      <Head />
       <h1>
         The Bowmaker's Guide
       </h1>
