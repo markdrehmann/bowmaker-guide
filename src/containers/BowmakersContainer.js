@@ -6,8 +6,8 @@ class BowmakersContainer extends Component {
   render() {
     return (
       <div>
-        <h1>Bowmakers Container</h1>
-        <h2>{this.props.bowmakers.length}</h2>
+        <h3>Bowmakers</h3>
+        <h4>{this.props.bowmakers.length}</h4>
       </div>
     )
   }

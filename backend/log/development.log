@@ -114,3 +114,19 @@ Processing by BowmakersController#index as */*
 Completed 200 OK in 15ms (Views: 10.4ms | ActiveRecord: 0.4ms | Allocations: 848)
 
 
+Started GET "/bowmakers" for ::1 at 2021-11-05 16:46:39 -0700
+  [1m[35m (3.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by BowmakersController#index as */*
+  [1m[36mBowmaker Load (1.0ms)[0m  [1m[34mSELECT "bowmakers".* FROM "bowmakers"[0m
+  ↳ app/controllers/bowmakers_controller.rb:4:in `index'
+Completed 200 OK in 62ms (Views: 18.6ms | ActiveRecord: 2.1ms | Allocations: 10350)
+
+
+Started GET "/bowmakers" for ::1 at 2021-11-05 16:48:33 -0700
+Processing by BowmakersController#index as */*
+  [1m[36mBowmaker Load (8.8ms)[0m  [1m[34mSELECT "bowmakers".* FROM "bowmakers"[0m
+  ↳ app/controllers/bowmakers_controller.rb:4:in `index'
+Completed 200 OK in 23ms (Views: 10.3ms | ActiveRecord: 8.8ms | Allocations: 866)
+
+

@@ -11,7 +11,7 @@ class Head extends Component {
   render() {
     return (
       <div>
-        <h1>This should be the header</h1>
+        <h1>The Bowmaker's Guide</h1>
         <BowmakersContainer />
       </div>
     )
