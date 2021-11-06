@@ -12,7 +12,7 @@ class Head extends Component {
     return (
       <div>
         <h1>The Bowmaker's Guide</h1>
-        <BowmakersContainer />
+        {/* <BowmakersContainer /> */}
       </div>
     )
   }

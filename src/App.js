@@ -1,9 +1,11 @@
 import './App.css';
 
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+// what happened to useHistory?
 
 import Head from './components/Head';
 import BowmakersContainer from './containers/BowmakersContainer';
+import ShowBowmaker from './components/bowmakers/ShowBowmaker';
 
 function App() {
   return (
@@ -11,8 +13,8 @@ function App() {
         <Router>
           <Head />
           <Routes>
-            <Route exact path='/' component={BowmakersContainer} />
-            {/* <Route exact path='/makers/:id' component={ShowBowmaker} /> */}
+            <Route path='/' element={<BowmakersContainer />} />
+            <Route path='/makers/:id' element={<ShowBowmaker />} />
             {/* <Route exact path='/makers/:id/bow_drawings' component={BowDrawingsContainer} /> */}
             {/* <Route exact path='/makers/:id/bow_photos' component={BowPhotosContainer} /> */}
           </Routes>
