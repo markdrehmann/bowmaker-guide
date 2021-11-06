@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
 import { getBowmakers } from "../actions/actions";
-import BowmakersContainer from "../containers/BowmakersContainer";
 
 class Head extends Component {
   componentDidMount() {
@@ -12,7 +11,6 @@ class Head extends Component {
     return (
       <div>
         <h1>The Bowmaker's Guide</h1>
-        {/* <BowmakersContainer /> */}
       </div>
     )
   }
