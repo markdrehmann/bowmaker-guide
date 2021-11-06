@@ -4,7 +4,7 @@ import React from "react";
 const Bowmaker = props => {
   return (
     <li id={props.bowmaker.id}>
-      {props.bowmaker.last_name}, {props.bowmaker.first_name}
+      {props.bowmaker.last_name.toUpperCase()}, {props.bowmaker.first_name}
     </li>
   )
 }

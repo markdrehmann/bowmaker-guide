@@ -11,6 +11,10 @@
   color: #6b2b11; 
 }
 
+li {
+  text-align: left;
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
