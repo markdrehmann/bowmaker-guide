@@ -1,13 +1,25 @@
 import './App.css';
+
+import { BrowserRouter as Router, Route, Switch, useHistory } from 'react-router-dom';
+
 import Head from './components/Head';
+import BowmakersContainer from './containers/BowmakersContainer';
 
 function App() {
-  return (
-    <div className="App">
-      <Head />
-      
-    </div>
-  );
+  const history = useHistory();
+    return (
+      <div className='App'>
+          <Router>
+            <Head />
+            <Switch>
+              <Route exact path='/' component={BowmakersContainer} history={history} />
+              <Route exact path='/makers/:id' component={ShowBowmaker} history={history} />
+              <Route exact path='/makers/:id/bow_drawings' component={BowDrawingsContainer} history={history} />
+              <Route exact path='/makers/:id/bow_photos' component={BowPhotosContainer} history={history} />
+            </Switch>
+          </Router>
+        </div>
+    );
 }
 
 export default App;
@@ -20,14 +32,14 @@ export default App;
 // https://drive.google.com/uc?export=view&id=   THIS IS THE URL TO USE, NEED TO ADD ID OF PHOTO AT END
 
 // THIS IS AN IMAGE TAG FOR A BOW DRAWING
-{/* <img src='https://drive.google.com/uc?export=view&id=1B9hyRJsbBiMuknzhCVtoniczGpBRNn8s' alt='Bow Drawing' className="bow-drawing" /> */}
+/* <img src='https://drive.google.com/uc?export=view&id=1B9hyRJsbBiMuknzhCVtoniczGpBRNn8s' alt='Bow Drawing' className="bow-drawing" /> */
 
 // THIS IS A LINK TO MY WEBSITE
-{/* <a
+/* <a
   className="drehmann-bows-link"
   href="https://www.markdrehmannbows.com/"
   target="_blank"
   rel="noopener noreferrer"
 >
   Mark Drehmann - Bowmaker
-</a> */}
+</a> */
