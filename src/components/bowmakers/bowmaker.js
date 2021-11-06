@@ -1,8 +1,11 @@
 import React from "react";
 
-function Bowmaker() {
+// each <li> should be a link to the ShowBowmaker page for that maker
+const Bowmaker = props => {
   return (
-    <div>placeholder for Bowmaker component</div>
+    <li id={props.bowmaker.id}>
+      {props.bowmaker.last_name}, {props.bowmaker.first_name}
+    </li>
   )
 }
 
