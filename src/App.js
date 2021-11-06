@@ -1,25 +1,24 @@
 import './App.css';
 
-import { BrowserRouter as Router, Route, Switch, useHistory } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 import Head from './components/Head';
 import BowmakersContainer from './containers/BowmakersContainer';
 
 function App() {
-  const history = useHistory();
-    return (
-      <div className='App'>
-          <Router>
-            <Head />
-            <Switch>
-              <Route exact path='/' component={BowmakersContainer} history={history} />
-              <Route exact path='/makers/:id' component={ShowBowmaker} history={history} />
-              <Route exact path='/makers/:id/bow_drawings' component={BowDrawingsContainer} history={history} />
-              <Route exact path='/makers/:id/bow_photos' component={BowPhotosContainer} history={history} />
-            </Switch>
-          </Router>
-        </div>
-    );
+  return (
+    <div className='App'>
+        <Router>
+          <Head />
+          <Routes>
+            <Route exact path='/' component={BowmakersContainer} />
+            {/* <Route exact path='/makers/:id' component={ShowBowmaker} /> */}
+            {/* <Route exact path='/makers/:id/bow_drawings' component={BowDrawingsContainer} /> */}
+            {/* <Route exact path='/makers/:id/bow_photos' component={BowPhotosContainer} /> */}
+          </Routes>
+        </Router>
+      </div>
+  );
 }
 
 export default App;
