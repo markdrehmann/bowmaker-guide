@@ -13,7 +13,8 @@ function App() {
         <Router>
           <Head />
           <Routes>
-            <Route path='/' element={<BowmakersContainer />} />
+            {/* make a '/' path for homepage with link to makers? */}
+            <Route path='/makers' element={<BowmakersContainer />} />
             <Route path='/makers/:id' element={<ShowBowmaker />} />
             {/* <Route exact path='/makers/:id/bow_drawings' component={BowDrawingsContainer} /> */}
             {/* <Route exact path='/makers/:id/bow_photos' component={BowPhotosContainer} /> */}
