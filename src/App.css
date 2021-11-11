@@ -15,6 +15,11 @@ li {
   text-align: left;
 }
 
+.bowmaker-name {
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
