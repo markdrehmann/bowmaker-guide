@@ -1,10 +1,11 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
-import { useParams } from "react-router";
+// import { useParams } from "react-router";
+import { withRouter } from 'react-router-dom';
 
 class ShowBowmaker extends Component {
   render() {
-    const { id } = useParams();
+    const id = this.props.match.params.id
     console.log('showbowmaker', id)
     // let idx = Number(this.props.match.params.id)
     // let bowmaker = this.props.bowmakers.find(b => b.id === idx)
@@ -33,4 +34,4 @@ const mapStateToProps = (state) => {
 //   };
 // }
 
-export default connect(mapStateToProps)(ShowBowmaker)
+export default withRouter(connect(mapStateToProps)(ShowBowmaker))
