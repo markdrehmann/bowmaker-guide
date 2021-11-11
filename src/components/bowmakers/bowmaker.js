@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 const Bowmaker = props => {
   return (
     <li id={props.bowmaker.id}>
-      <Link to={`/makers/${props.bowmaker.id}`}>
+      <Link to={`/makers/${props.bowmaker.id}`} state={{bowmaker: props.bowmaker}} >
         {props.bowmaker.last_name.toUpperCase()}, {props.bowmaker.first_name}
       </Link>
     </li>

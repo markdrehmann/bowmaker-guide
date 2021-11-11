@@ -1,37 +1,16 @@
-import React, { Component } from "react";
-import { connect } from "react-redux";
-// import { useParams } from "react-router";
-import { withRouter } from 'react-router-dom';
+import { useLocation } from 'react-router-dom';
 
-class ShowBowmaker extends Component {
-  render() {
-    const id = this.props.match.params.id
-    console.log('showbowmaker', id)
-    // let idx = Number(this.props.match.params.id)
-    // let bowmaker = this.props.bowmakers.find(b => b.id === idx)
+function ShowBowmaker() {
+    const location = useLocation();
+    const bowmaker = location.state.bowmaker
+    console.log('showbowmaker', bowmaker)
     return (
-      <p>Show individual bowmaker</p>
+      <>
+        <h2>{bowmaker.first_name} {bowmaker.last_name}</h2>
+        <p>{bowmaker.birth_year} - {bowmaker.year_of_death}</p>
+        
+      </>
     )
   }
-}
 
-const mapStateToProps = (state) => {
-  // console.log('ownProps', ownProps)
-  // const idx = ownProps.match.params.id;
-  // const maker = state.bowmakers.find(maker => maker.id === idx);
-  return {
-    bowmakers: state.bowmakers,
-    // bowmaker: maker
-  }
-}
-
-// function mapStateToProps(state, ownProps) {
-//   const id = ownProps.match.params.id;
-//  // get the user
-//   const contextuser = getUserById(state.users, id);
-//   return {
-//       contextuser; contextuser
-//   };
-// }
-
-export default withRouter(connect(mapStateToProps)(ShowBowmaker))
+export default ShowBowmaker
