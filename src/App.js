@@ -6,6 +6,8 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Head from './components/Head';
 import BowmakersContainer from './containers/BowmakersContainer';
 import ShowBowmaker from './components/bowmakers/ShowBowmaker';
+import BowDrawingsContainer from './containers/BowDrawingsContainer';
+import BowPhotosContainer from './containers/BowPhotosContainer';
 
 function App() {
   return (
@@ -16,8 +18,8 @@ function App() {
             {/* make a '/' path for homepage with link to makers? */}
             <Route path='/makers' element={<BowmakersContainer />} />
             <Route path='/makers/:id' element={<ShowBowmaker />} />
-            {/* <Route exact path='/makers/:id/bow_drawings' component={BowDrawingsContainer} /> */}
-            {/* <Route exact path='/makers/:id/bow_photos' component={BowPhotosContainer} /> */}
+            <Route exact path='/makers/:id/bow_drawings' element={<BowDrawingsContainer />} />
+            <Route exact path='/makers/:id/bow_photos' element={<BowPhotosContainer />} />
           </Routes>
         </Router>
       </div>

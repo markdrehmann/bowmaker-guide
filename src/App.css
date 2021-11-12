@@ -61,6 +61,14 @@ li {
   color: #9b7244; 
 }
 
+span {
+  display: inline-block;
+}
+
+a {
+  color: #6b2b11;
+}
+
 a:hover {
   color: rgb(104, 104, 104);
 }

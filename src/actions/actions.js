@@ -8,7 +8,7 @@ export const getBowmakers = () => {
           alert(bowmakers.errors)
           // dispatch({type: 'FAILED_REQUEST'})
         } else {
-          console.log("inside getBowmakers action in actions.js", bowmakers)
+          // console.log("inside getBowmakers action in actions.js", bowmakers)
           dispatch({type: 'GET_BOWMAKERS', bowmakers})
         }
       })

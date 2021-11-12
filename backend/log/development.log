@@ -552,3 +552,92 @@ Processing by BowmakersController#index as */*
 Completed 200 OK in 27ms (Views: 25.9ms | ActiveRecord: 0.5ms | Allocations: 866)
 
 
+Started GET "/bowmakers" for ::1 at 2021-11-11 21:16:43 -0800
+Processing by BowmakersController#index as */*
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/bowmakers_controller.rb:4:in `index'
+  [1m[36mBowmaker Load (3.3ms)[0m  [1m[34mSELECT "bowmakers".* FROM "bowmakers"[0m
+  ↳ app/controllers/bowmakers_controller.rb:4:in `index'
+Completed 200 OK in 171ms (Views: 160.6ms | ActiveRecord: 23.1ms | Allocations: 1452)
+
+
+Started GET "/bowmakers" for ::1 at 2021-11-11 21:17:28 -0800
+Processing by BowmakersController#index as */*
+  [1m[36mBowmaker Load (0.8ms)[0m  [1m[34mSELECT "bowmakers".* FROM "bowmakers"[0m
+  ↳ app/controllers/bowmakers_controller.rb:4:in `index'
+Completed 200 OK in 76ms (Views: 69.1ms | ActiveRecord: 0.8ms | Allocations: 866)
+
+
+Started GET "/bowmakers" for ::1 at 2021-11-11 21:18:24 -0800
+Processing by BowmakersController#index as */*
+  [1m[36mBowmaker Load (0.2ms)[0m  [1m[34mSELECT "bowmakers".* FROM "bowmakers"[0m
+  ↳ app/controllers/bowmakers_controller.rb:4:in `index'
+Completed 200 OK in 25ms (Views: 21.2ms | ActiveRecord: 0.2ms | Allocations: 848)
+
+
+Started GET "/bowmakers" for ::1 at 2021-11-11 21:18:56 -0800
+Processing by BowmakersController#index as */*
+  [1m[36mBowmaker Load (1.0ms)[0m  [1m[34mSELECT "bowmakers".* FROM "bowmakers"[0m
+  ↳ app/controllers/bowmakers_controller.rb:4:in `index'
+Completed 200 OK in 48ms (Views: 41.6ms | ActiveRecord: 1.0ms | Allocations: 849)
+
+
+Started GET "/bowmakers" for ::1 at 2021-11-11 21:20:07 -0800
+Processing by BowmakersController#index as */*
+  [1m[36mBowmaker Load (0.2ms)[0m  [1m[34mSELECT "bowmakers".* FROM "bowmakers"[0m
+  ↳ app/controllers/bowmakers_controller.rb:4:in `index'
+Completed 200 OK in 24ms (Views: 22.7ms | ActiveRecord: 0.2ms | Allocations: 848)
+
+
+Started GET "/bowmakers" for ::1 at 2021-11-11 21:20:15 -0800
+Processing by BowmakersController#index as */*
+  [1m[36mBowmaker Load (0.2ms)[0m  [1m[34mSELECT "bowmakers".* FROM "bowmakers"[0m
+  ↳ app/controllers/bowmakers_controller.rb:4:in `index'
+Completed 200 OK in 9ms (Views: 8.9ms | ActiveRecord: 0.2ms | Allocations: 851)
+
+
+Started GET "/bowmakers" for ::1 at 2021-11-11 21:32:15 -0800
+Processing by BowmakersController#index as */*
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/bowmakers_controller.rb:4:in `index'
+  [1m[36mBowmaker Load (1.8ms)[0m  [1m[34mSELECT "bowmakers".* FROM "bowmakers"[0m
+  ↳ app/controllers/bowmakers_controller.rb:4:in `index'
+Completed 200 OK in 233ms (Views: 192.6ms | ActiveRecord: 6.9ms | Allocations: 1433)
+
+
+Started GET "/bowmakers" for ::1 at 2021-11-11 21:32:21 -0800
+Processing by BowmakersController#index as */*
+  [1m[36mBowmaker Load (4.2ms)[0m  [1m[34mSELECT "bowmakers".* FROM "bowmakers"[0m
+  ↳ app/controllers/bowmakers_controller.rb:4:in `index'
+Completed 200 OK in 40ms (Views: 32.8ms | ActiveRecord: 4.2ms | Allocations: 848)
+
+
+  [1m[35m (8.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mBowmaker Load (2.6ms)[0m  [1m[34mSELECT "bowmakers".* FROM "bowmakers" ORDER BY "bowmakers"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[35m (3.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "bow_drawings"[0m
+  [1m[36mBowDrawing Load (7.0ms)[0m  [1m[34mSELECT "bow_drawings".* FROM "bow_drawings" WHERE "bow_drawings"."bowmaker_id" = ? /* loading for inspect */ LIMIT ?[0m  [["bowmaker_id", 1], ["LIMIT", 11]]
+Started GET "/bowmakers" for ::1 at 2021-11-11 21:41:16 -0800
+Processing by BowmakersController#index as */*
+  [1m[35m (3.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/bowmakers_controller.rb:4:in `index'
+  [1m[36mBowmaker Load (8.4ms)[0m  [1m[34mSELECT "bowmakers".* FROM "bowmakers"[0m
+  ↳ app/controllers/bowmakers_controller.rb:4:in `index'
+Completed 200 OK in 200ms (Views: 180.2ms | ActiveRecord: 25.0ms | Allocations: 1434)
+
+
+Started GET "/bowmakers" for ::1 at 2021-11-11 21:43:12 -0800
+Processing by BowmakersController#index as */*
+  [1m[36mBowmaker Load (5.5ms)[0m  [1m[34mSELECT "bowmakers".* FROM "bowmakers"[0m
+  ↳ app/controllers/bowmakers_controller.rb:4:in `index'
+Completed 200 OK in 50ms (Views: 39.5ms | ActiveRecord: 5.5ms | Allocations: 848)
+
+
+Started GET "/bowmakers" for ::1 at 2021-11-11 21:49:50 -0800
+Processing by BowmakersController#index as */*
+  [1m[35m (13.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/bowmakers_controller.rb:4:in `index'
+  [1m[36mBowmaker Load (3.8ms)[0m  [1m[34mSELECT "bowmakers".* FROM "bowmakers"[0m
+  ↳ app/controllers/bowmakers_controller.rb:4:in `index'
+Completed 200 OK in 204ms (Views: 184.8ms | ActiveRecord: 24.9ms | Allocations: 1434)
+
+
