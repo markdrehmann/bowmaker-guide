@@ -20,6 +20,12 @@ li {
   margin-bottom: 0px;
 }
 
+.bowmaker-bio {
+  color: black;
+  font-size: medium;
+  margin: 40px;
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
