@@ -61,8 +61,10 @@ li {
   color: #9b7244; 
 }
 
-span {
-  display: inline-block;
+.photo-drawing-links {
+  margin: 0px 20px;
+  display:inline-block;
+  /* background-color: black; */
 }
 
 a {
