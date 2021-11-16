@@ -1,13 +1,14 @@
 import { useLocation } from 'react-router-dom';
 import { useEffect } from 'react';
+import { getDrawings } from '../actions/actions';
 
 function BowDrawingsContainer() {
   const location = useLocation();
   const bowmaker = location.state.bowmaker
-  
+
   useEffect(() => {
     console.log('using effect')
-  })
+  }, [])
 
   return (
     <h2>

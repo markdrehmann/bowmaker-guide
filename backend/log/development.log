@@ -733,3 +733,281 @@ Processing by BowmakersController#index as */*
 Completed 200 OK in 22ms (Views: 17.8ms | ActiveRecord: 1.2ms | Allocations: 866)
 
 
+Started GET "/bowmakers" for ::1 at 2021-11-16 14:37:26 -0800
+Processing by BowmakersController#index as */*
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/bowmakers_controller.rb:4:in `index'
+  [1m[36mBowmaker Load (2.0ms)[0m  [1m[34mSELECT "bowmakers".* FROM "bowmakers"[0m
+  ↳ app/controllers/bowmakers_controller.rb:4:in `index'
+Completed 200 OK in 139ms (Views: 79.5ms | ActiveRecord: 3.5ms | Allocations: 7106)
+
+
+Started GET "/bowmakers" for ::1 at 2021-11-16 14:37:39 -0800
+Processing by BowmakersController#index as HTML
+  [1m[36mBowmaker Load (0.5ms)[0m  [1m[34mSELECT "bowmakers".* FROM "bowmakers"[0m
+  ↳ app/controllers/bowmakers_controller.rb:4:in `index'
+Completed 200 OK in 3ms (Views: 2.4ms | ActiveRecord: 0.5ms | Allocations: 845)
+
+
+Started GET "/bow_drawings" for ::1 at 2021-11-16 14:38:04 -0800
+  
+AbstractController::ActionNotFound (The action 'index' could not be found for BowDrawingsController):
+  
+actionpack (6.1.4.1) lib/abstract_controller/base.rb:160:in `process'
+actionpack (6.1.4.1) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (6.1.4.1) lib/action_controller/metal.rb:254:in `dispatch'
+actionpack (6.1.4.1) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (6.1.4.1) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.1.4.1) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (6.1.4.1) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.1.4.1) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.1.4.1) lib/action_dispatch/routing/route_set.rb:842:in `call'
+rack (2.2.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.3) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.3) lib/rack/head.rb:12:in `call'
+activerecord (6.1.4.1) lib/active_record/migration.rb:601:in `call'
+actionpack (6.1.4.1) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.1.4.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (6.1.4.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.1.4.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.4.1) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.1.4.1) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+actionpack (6.1.4.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.1.4.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.1.4.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.1.4.1) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (6.1.4.1) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (6.1.4.1) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (6.1.4.1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.1.4.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.1.4.1) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.1.4.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.1.4.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.4.1) lib/action_dispatch/middleware/static.rb:24:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.1.4.1) lib/action_dispatch/middleware/host_authorization.rb:98:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.1.4.1) lib/rails/engine.rb:539:in `call'
+puma (5.5.2) lib/puma/configuration.rb:249:in `call'
+puma (5.5.2) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.5.2) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.5.2) lib/puma/request.rb:76:in `handle_request'
+puma (5.5.2) lib/puma/server.rb:447:in `process_client'
+puma (5.5.2) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/bow_drawings" for ::1 at 2021-11-16 14:39:02 -0800
+Processing by BowDrawingsController#index as HTML
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/bow_drawings_controller.rb:4:in `index'
+  [1m[36mBowDrawing Load (2.3ms)[0m  [1m[34mSELECT "bow_drawings".* FROM "bow_drawings"[0m
+  ↳ app/controllers/bow_drawings_controller.rb:4:in `index'
+Completed 200 OK in 46ms (Views: 29.3ms | ActiveRecord: 9.0ms | Allocations: 5247)
+
+
+Started GET "/bow_drawings/1" for ::1 at 2021-11-16 14:40:16 -0800
+Processing by BowDrawingsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/bow_drawings_controller.rb:8:in `show'
+  [1m[36mBowDrawing Load (1.2ms)[0m  [1m[34mSELECT "bow_drawings".* FROM "bow_drawings" WHERE "bow_drawings"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/bow_drawings_controller.rb:8:in `show'
+Completed 200 OK in 81ms (Views: 0.8ms | ActiveRecord: 2.5ms | Allocations: 4737)
+
+
+Started GET "/bow_drawings/1" for ::1 at 2021-11-16 14:41:33 -0800
+Processing by BowDrawingsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/bow_drawings_controller.rb:8:in `show'
+  [1m[36mBowDrawing Load (2.7ms)[0m  [1m[34mSELECT "bow_drawings".* FROM "bow_drawings" WHERE "bow_drawings"."bowmaker_id" = ? LIMIT ?[0m  [["bowmaker_id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/bow_drawings_controller.rb:8:in `show'
+Completed 200 OK in 31ms (Views: 0.3ms | ActiveRecord: 7.4ms | Allocations: 4491)
+
+
+Started GET "/bow_drawings/2" for ::1 at 2021-11-16 14:41:43 -0800
+Processing by BowDrawingsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mBowDrawing Load (0.4ms)[0m  [1m[34mSELECT "bow_drawings".* FROM "bow_drawings" WHERE "bow_drawings"."bowmaker_id" = ? LIMIT ?[0m  [["bowmaker_id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/bow_drawings_controller.rb:8:in `show'
+Completed 200 OK in 5ms (Views: 0.3ms | ActiveRecord: 0.4ms | Allocations: 476)
+
+
+Started GET "/bow_drawings/1" for ::1 at 2021-11-16 14:41:47 -0800
+Processing by BowDrawingsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mBowDrawing Load (0.3ms)[0m  [1m[34mSELECT "bow_drawings".* FROM "bow_drawings" WHERE "bow_drawings"."bowmaker_id" = ? LIMIT ?[0m  [["bowmaker_id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/bow_drawings_controller.rb:8:in `show'
+Completed 200 OK in 4ms (Views: 0.6ms | ActiveRecord: 0.3ms | Allocations: 562)
+
+
+Started GET "/bowmakers" for ::1 at 2021-11-16 14:44:31 -0800
+Processing by BowmakersController#index as */*
+  [1m[36mBowmaker Load (4.2ms)[0m  [1m[34mSELECT "bowmakers".* FROM "bowmakers"[0m
+  ↳ app/controllers/bowmakers_controller.rb:4:in `index'
+Completed 200 OK in 162ms (Views: 93.7ms | ActiveRecord: 6.0ms | Allocations: 6754)
+
+
+Started GET "/bowmakers" for ::1 at 2021-11-16 14:44:36 -0800
+Processing by BowmakersController#index as */*
+  [1m[36mBowmaker Load (0.2ms)[0m  [1m[34mSELECT "bowmakers".* FROM "bowmakers"[0m
+  ↳ app/controllers/bowmakers_controller.rb:4:in `index'
+Completed 200 OK in 26ms (Views: 20.2ms | ActiveRecord: 0.2ms | Allocations: 848)
+
+
+  [1m[35m (4.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (2.7ms)[0m  [1m[34mSELECT COUNT(*) FROM "bow_drawings"[0m
+  [1m[36mBowmaker Load (2.3ms)[0m  [1m[34mSELECT "bowmakers".* FROM "bowmakers" ORDER BY "bowmakers"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "bow_drawings" WHERE "bow_drawings"."bowmaker_id" = ?[0m  [["bowmaker_id", 1]]
+  [1m[36mBowDrawing Load (0.5ms)[0m  [1m[34mSELECT "bow_drawings".* FROM "bow_drawings" WHERE "bow_drawings"."bowmaker_id" = ? /* loading for inspect */ LIMIT ?[0m  [["bowmaker_id", 1], ["LIMIT", 11]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBowDrawing Create (2.9ms)[0m  [1m[32mINSERT INTO "bow_drawings" ("url", "bowmaker_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["url", "Testing"], ["bowmaker_id", 1], ["created_at", "2021-11-16 22:48:06.156066"], ["updated_at", "2021-11-16 22:48:06.156066"]]
+  [1m[36mTRANSACTION (3.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "bow_drawings" WHERE "bow_drawings"."bowmaker_id" = ?[0m  [["bowmaker_id", 1]]
+  [1m[36mBowmaker Load (0.3ms)[0m  [1m[34mSELECT "bowmakers".* FROM "bowmakers" ORDER BY "bowmakers"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBowDrawing Create (1.0ms)[0m  [1m[32mINSERT INTO "bow_drawings" ("url", "bowmaker_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["url", "Test"], ["bowmaker_id", 2], ["created_at", "2021-11-16 22:48:39.927161"], ["updated_at", "2021-11-16 22:48:39.927161"]]
+  [1m[36mTRANSACTION (3.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "bow_drawings" WHERE "bow_drawings"."bowmaker_id" = ?[0m  [["bowmaker_id", 2]]
+Started GET "/bow_drawings/1" for ::1 at 2021-11-16 14:48:55 -0800
+Processing by BowDrawingsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/bow_drawings_controller.rb:8:in `show'
+  [1m[36mBowDrawing Load (0.5ms)[0m  [1m[34mSELECT "bow_drawings".* FROM "bow_drawings" WHERE "bow_drawings"."bowmaker_id" = ? LIMIT ?[0m  [["bowmaker_id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/bow_drawings_controller.rb:8:in `show'
+Completed 200 OK in 29ms (Views: 0.4ms | ActiveRecord: 4.2ms | Allocations: 4528)
+
+
+Started GET "/bow_drawings/1" for ::1 at 2021-11-16 14:52:53 -0800
+Processing by BowDrawingsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/bow_drawings_controller.rb:8:in `show'
+  [1m[36mBowDrawing Load (0.3ms)[0m  [1m[34mSELECT "bow_drawings".* FROM "bow_drawings"[0m
+  ↳ app/controllers/bow_drawings_controller.rb:8:in `show'
+Completed 200 OK in 75ms (Views: 0.5ms | ActiveRecord: 6.2ms | Allocations: 4339)
+
+
+Started GET "/bow_drawings/1" for ::1 at 2021-11-16 14:53:14 -0800
+Processing by BowDrawingsController#show as HTML
+  Parameters: {"id"=>"1"}
+Completed 500 Internal Server Error in 178ms (Allocations: 2978)
+
+
+  
+NoMethodError (undefined method `find_all' for #<Class:0x00007fe49c22dde0>
+Did you mean?  find_each):
+  
+app/controllers/bow_drawings_controller.rb:8:in `show'
+Started GET "/bow_drawings/1" for ::1 at 2021-11-16 14:53:27 -0800
+Processing by BowDrawingsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/bow_drawings_controller.rb:8:in `show'
+  [1m[36mBowDrawing Load (0.3ms)[0m  [1m[34mSELECT "bow_drawings".* FROM "bow_drawings"[0m
+  ↳ app/controllers/bow_drawings_controller.rb:8:in `show'
+Completed 200 OK in 30ms (Views: 0.2ms | ActiveRecord: 2.0ms | Allocations: 4388)
+
+
+  [1m[35m (3.8ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "bow_drawings"[0m
+  [1m[36mBowDrawing Load (6.7ms)[0m  [1m[34mSELECT "bow_drawings".* FROM "bow_drawings"[0m
+Started GET "/bow_drawings/1" for ::1 at 2021-11-16 14:56:30 -0800
+Processing by BowDrawingsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/bow_drawings_controller.rb:9:in `show'
+  [1m[36mBowDrawing Load (0.3ms)[0m  [1m[34mSELECT "bow_drawings".* FROM "bow_drawings"[0m
+  ↳ app/controllers/bow_drawings_controller.rb:9:in `show'
+Completed 200 OK in 45ms (Views: 0.6ms | ActiveRecord: 4.3ms | Allocations: 4379)
+
+
+Started GET "/bow_drawings" for ::1 at 2021-11-16 14:56:36 -0800
+Processing by BowDrawingsController#index as HTML
+  [1m[36mBowDrawing Load (0.4ms)[0m  [1m[34mSELECT "bow_drawings".* FROM "bow_drawings"[0m
+  ↳ app/controllers/bow_drawings_controller.rb:4:in `index'
+Completed 200 OK in 9ms (Views: 7.0ms | ActiveRecord: 0.4ms | Allocations: 835)
+
+
+Started GET "/bow_drawings/1" for ::1 at 2021-11-16 14:56:41 -0800
+Processing by BowDrawingsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mBowDrawing Load (0.3ms)[0m  [1m[34mSELECT "bow_drawings".* FROM "bow_drawings"[0m
+  ↳ app/controllers/bow_drawings_controller.rb:9:in `show'
+Completed 200 OK in 6ms (Views: 0.2ms | ActiveRecord: 0.3ms | Allocations: 550)
+
+
+Started GET "/bow_drawings/1" for ::1 at 2021-11-16 14:56:54 -0800
+Processing by BowDrawingsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/bow_drawings_controller.rb:9:in `show'
+  [1m[36mBowDrawing Load (0.3ms)[0m  [1m[34mSELECT "bow_drawings".* FROM "bow_drawings"[0m
+  ↳ app/controllers/bow_drawings_controller.rb:9:in `show'
+Completed 200 OK in 49ms (Views: 0.3ms | ActiveRecord: 3.3ms | Allocations: 4331)
+
+
+Started GET "/bow_drawings/1" for ::1 at 2021-11-16 14:58:36 -0800
+  
+AbstractController::ActionNotFound (The action 'show' could not be found for BowDrawingsController):
+  
+actionpack (6.1.4.1) lib/abstract_controller/base.rb:160:in `process'
+actionpack (6.1.4.1) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (6.1.4.1) lib/action_controller/metal.rb:254:in `dispatch'
+actionpack (6.1.4.1) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (6.1.4.1) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.1.4.1) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (6.1.4.1) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.1.4.1) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.1.4.1) lib/action_dispatch/routing/route_set.rb:842:in `call'
+rack (2.2.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.3) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.3) lib/rack/head.rb:12:in `call'
+activerecord (6.1.4.1) lib/active_record/migration.rb:601:in `call'
+actionpack (6.1.4.1) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.1.4.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (6.1.4.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.1.4.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.4.1) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.1.4.1) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+actionpack (6.1.4.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.1.4.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.1.4.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.1.4.1) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (6.1.4.1) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (6.1.4.1) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (6.1.4.1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.1.4.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.1.4.1) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.1.4.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.1.4.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.4.1) lib/action_dispatch/middleware/static.rb:24:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.1.4.1) lib/action_dispatch/middleware/host_authorization.rb:98:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.1.4.1) lib/rails/engine.rb:539:in `call'
+puma (5.5.2) lib/puma/configuration.rb:249:in `call'
+puma (5.5.2) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.5.2) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.5.2) lib/puma/request.rb:76:in `handle_request'
+puma (5.5.2) lib/puma/server.rb:447:in `process_client'
+puma (5.5.2) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/bow_drawings" for ::1 at 2021-11-16 14:58:40 -0800
+Processing by BowDrawingsController#index as HTML
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/bow_drawings_controller.rb:4:in `index'
+  [1m[36mBowDrawing Load (0.3ms)[0m  [1m[34mSELECT "bow_drawings".* FROM "bow_drawings"[0m
+  ↳ app/controllers/bow_drawings_controller.rb:4:in `index'
+Completed 200 OK in 41ms (Views: 38.2ms | ActiveRecord: 3.6ms | Allocations: 4734)
+
+
+Started GET "/bowmakers" for ::1 at 2021-11-16 14:59:56 -0800
+Processing by BowmakersController#index as */*
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/bowmakers_controller.rb:4:in `index'
+  [1m[36mBowmaker Load (0.9ms)[0m  [1m[34mSELECT "bowmakers".* FROM "bowmakers"[0m
+  ↳ app/controllers/bowmakers_controller.rb:4:in `index'
+Completed 200 OK in 142ms (Views: 98.1ms | ActiveRecord: 6.0ms | Allocations: 7622)
+
+

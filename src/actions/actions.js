@@ -15,3 +15,23 @@ export const getBowmakers = () => {
       .catch(console.log)
   }
 }
+
+export const getDrawings = (makerId) => {
+  return (dispatch) => {
+    dispatch({type: 'LOADING'})
+    fetch("http://localhost:3001/bow_drawings/")
+      .then(res => res.json())
+      .then(drawings => {
+        if (drawings.errors) {
+          alert(drawings.errors)
+          // dispatch({type: 'FAILED_REQUEST'})
+        } else {
+          // this is wrong right now
+          maker_drawings = drawings.filter(d => d.bowmaker_id === makerId)
+          console.log("inside getDrawings action in actions.js", maker_drawings)
+          // dispatch({type: 'GET_DRAWINGS', drawings})
+        }
+      })
+      .catch(console.log)
+  }
+}
