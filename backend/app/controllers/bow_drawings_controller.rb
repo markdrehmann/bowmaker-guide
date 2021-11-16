@@ -1,2 +1,3 @@
 class BowDrawingsController < ApplicationController
+  
 end
