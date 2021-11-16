@@ -12,9 +12,7 @@ function ShowBowmaker() {
         <span className='photo-drawing-links'>
           <Link to={`/makers/${bowmaker.id}/bow_drawings`} state={{bowmaker: bowmaker}} >
             Bow Drawings
-          </Link>
-          {/* </span>
-          <span className='photo-drawing-links'> */}
+          </Link>&emsp;---&emsp;
           <Link to={`/makers/${bowmaker.id}/bow_photos`} state={{bowmaker: bowmaker}} >
             Bow Photos
           </Link>
