@@ -1,13 +1,15 @@
 import { useLocation } from 'react-router-dom';
 import { useEffect } from 'react';
 import { getDrawings } from '../actions/actions';
+import { connect } from 'react-redux';
 
-function BowDrawingsContainer() {
+function BowDrawingsContainer(props) {
   const location = useLocation();
   const bowmaker = location.state.bowmaker
 
   useEffect(() => {
-    console.log('using effect')
+    props.getDrawings(bowmaker.id)
+    console.log('using effect', props)
   }, [])
 
   return (
@@ -17,4 +19,4 @@ function BowDrawingsContainer() {
   )
 }
 
-export default BowDrawingsContainer
+export default connect(null, {getDrawings})(BowDrawingsContainer)

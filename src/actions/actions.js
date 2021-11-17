@@ -17,6 +17,7 @@ export const getBowmakers = () => {
 }
 
 export const getDrawings = (makerId) => {
+  let maker_drawings;
   return (dispatch) => {
     dispatch({type: 'LOADING'})
     fetch("http://localhost:3001/bow_drawings/")
