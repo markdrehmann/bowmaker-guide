@@ -26,20 +26,3 @@ function App() {
 }
 
 export default App;
-
-
-// https://drive.google.com/uc?export=view&id=   THIS IS THE URL TO USE, NEED TO ADD ID OF PHOTO AT END
-
-// THIS IS AN IMAGE TAG FOR A BOW DRAWING
-/* <img src='https://drive.google.com/uc?export=view&id=1B9hyRJsbBiMuknzhCVtoniczGpBRNn8s' alt='Bow Drawing' className="bow-drawing" /> */
-
-
-// THIS IS A LINK TO MY WEBSITE
-/* <a
-  className="drehmann-bows-link"
-  href="https://www.markdrehmannbows.com/"
-  target="_blank"
-  rel="noopener noreferrer"
->
-  Mark Drehmann - Bowmaker
-</a> */

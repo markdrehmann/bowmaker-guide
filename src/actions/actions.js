@@ -27,10 +27,9 @@ export const getDrawings = (makerId) => {
           alert(drawings.errors)
           // dispatch({type: 'FAILED_REQUEST'})
         } else {
-          // this is wrong right now
           maker_drawings = drawings.filter(d => d.bowmaker_id === makerId)
-          console.log("inside getDrawings action in actions.js", maker_drawings)
-          // dispatch({type: 'GET_DRAWINGS', drawings})
+          // console.log("inside getDrawings action in actions.js", maker_drawings)
+          dispatch({type: 'GET_DRAWINGS', maker_drawings})
         }
       })
       .catch(console.log)

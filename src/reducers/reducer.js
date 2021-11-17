@@ -1,5 +1,7 @@
 function reducer(state = {
   bowmakers: [],
+  drawings: [],
+  photos: [],
   loading: false
 }, action) {
   switch(action.type) {
@@ -10,7 +12,14 @@ function reducer(state = {
       }
     case 'GET_BOWMAKERS':
       return {
+        ...state,
         bowmakers: action.bowmakers,
+        loading: false
+      }
+    case 'GET_DRAWINGS':
+      return {
+        ...state,
+        drawings: action.maker_drawings,
         loading: false
       }
     default:
