@@ -3,6 +3,8 @@ import { useEffect } from 'react';
 import { getDrawings } from '../actions/actions';
 import { connect } from 'react-redux';
 import BowDrawing from '../components/bowDrawings/BowDrawing';
+import BowmakerHeader from '../components/bowmakers/BowmakerHeader';
+import NavBar from '../components/NavBar';
 
 function BowDrawingsContainer(props) {
   const location = useLocation();
@@ -18,6 +20,8 @@ function BowDrawingsContainer(props) {
 
   return (
     <>
+      <BowmakerHeader bowmaker={bowmaker} />
+      <NavBar bowmaker={bowmaker} />
       {renderDrawings()}
     </>
   )
