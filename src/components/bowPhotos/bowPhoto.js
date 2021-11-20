@@ -1,8 +1,11 @@
 import React from "react";
 
-function BowPhoto() {
+function BowPhoto(props) {
   return (
-    <div>placeholder for BowPhoto component</div>
+    <div>
+      <h3>{props.photo.title}</h3>
+      <img src={props.photo.url} alt='Bow Photo' className='bow-photo' />
+    </div>
   )
 }
 

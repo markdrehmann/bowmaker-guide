@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_11_19_213137) do
+ActiveRecord::Schema.define(version: 2021_11_20_073807) do
 
   create_table "bow_drawings", force: :cascade do |t|
     t.string "url"
@@ -27,6 +27,8 @@ ActiveRecord::Schema.define(version: 2021_11_19_213137) do
     t.integer "bowmaker_id", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.string "url"
+    t.string "title"
     t.index ["bowmaker_id"], name: "index_bow_photos_on_bowmaker_id"
   end
 
