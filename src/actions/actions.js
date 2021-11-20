@@ -35,3 +35,23 @@ export const getDrawings = (makerId) => {
       .catch(console.log)
   }
 }
+
+export const getPhotos = (makerId) => {
+  let maker_photos;
+  return (dispatch) => {
+    dispatch({type: 'LOADING'})
+    fetch("http://localhost:3001/bow_photos/")
+      .then(res => res.json())
+      .then(photos => {
+        if (photos.errors) {
+          alert(photos.errors)
+          // dispatch({type: 'FAILED_REQUEST'})
+        } else {
+          maker_photos = photos.filter(p => p.bowmaker_id === makerId)
+          // console.log("inside getPhotos action in actions.js", maker_photos)
+          dispatch({type: 'GET_PHOTOS', maker_photos})
+        }
+      })
+      .catch(console.log)
+  }
+}

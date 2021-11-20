@@ -22,6 +22,12 @@ function reducer(state = {
         drawings: action.maker_drawings,
         loading: false
       }
+    case 'GET_PHOTOS':
+      return {
+        ...state,
+        photos: action.maker_photos,
+        loading: false
+      }
     default:
       return state
   }

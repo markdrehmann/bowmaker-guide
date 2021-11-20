@@ -12,7 +12,7 @@ function BowDrawingsContainer(props) {
 
   useEffect(() => {
     props.getDrawings(bowmaker.id)
-  })
+  }, [])
 
   const renderDrawings = () => {
     return props.drawings.map(drawing => <BowDrawing drawing={drawing} key={drawing.id} />)

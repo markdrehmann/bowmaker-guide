@@ -46,6 +46,10 @@ li {
   transition: transform .2s;
 }
 
+.bow-photo {
+  width: 80%;
+}
+
 .bow-drawing:hover {
   transform: scale(1.1); /* zoom */
 }
