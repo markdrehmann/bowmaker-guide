@@ -12,7 +12,7 @@ function BowPhotosContainer(props) {
   
   useEffect(() => {
     props.getPhotos(bowmaker.id)
-  }, [])
+  }, []) // eslint-disable-line react-hooks/exhaustive-deps
 
   const renderPhotos = () => {
     return props.photos.map(photo => <BowPhoto photo={photo} key={photo.id} />)

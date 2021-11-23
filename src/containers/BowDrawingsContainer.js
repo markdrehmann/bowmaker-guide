@@ -12,7 +12,7 @@ function BowDrawingsContainer(props) {
 
   useEffect(() => {
     props.getDrawings(bowmaker.id)
-  }, [])
+  }, []) // eslint-disable-line react-hooks/exhaustive-deps
 
   const renderDrawings = () => {
     return props.drawings.map(drawing => <BowDrawing drawing={drawing} key={drawing.id} />)
