@@ -55,3 +55,28 @@ export const getPhotos = (makerId) => {
       .catch(console.log)
   }
 }
+
+export const createBowmaker = (bowmaker) => {
+  return (dispatch) => {
+    dispatch({type: 'LOADING'})
+    fetch("http://localhost:3001/bowmakers", {
+      method: "POST",
+      headers: {
+        "Accept": "application/json",
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify(bowmaker)
+    })
+      .then(res => res.json())
+      .then(response => {
+        if (response.errors) {
+          alert(response.errors)
+          dispatch({type: 'FAILED_REQUEST'})
+        } else {
+          dispatch({type: 'CREATE_BOWMAKER', response})
+          alert("Bowmaker Created")
+        }
+      })
+      .catch(console.log)
+  }
+}

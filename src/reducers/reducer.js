@@ -16,6 +16,12 @@ function reducer(state = {
         bowmakers: action.bowmakers,
         loading: false
       }
+    case 'CREATE_BOWMAKER':
+      return {
+        ...state,
+        bowmakers: [...state.bowmakers, action.response],
+        loading: false
+      }
     case 'GET_DRAWINGS':
       return {
         ...state,
@@ -26,6 +32,11 @@ function reducer(state = {
       return {
         ...state,
         photos: action.maker_photos,
+        loading: false
+      }
+    case 'FAILED_REQUEST':
+      return {
+        ...state,
         loading: false
       }
     default:

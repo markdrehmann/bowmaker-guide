@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
-// import { connect } from 'react-redux';
-// import createBowmaker from actions -- doesn't exist yet
+import { Link } from 'react-router-dom';
+import { connect } from 'react-redux';
+import { createBowmaker } from '../../actions/actions';
 
 class NewBowmaker extends Component {
   state = {
@@ -34,6 +35,9 @@ class NewBowmaker extends Component {
   render() {
     return(
       <div>
+        <Link to={`/makers`} >
+          Home
+        </Link>
         <h2>New Bowmaker</h2>
         <form onSubmit={this.handleSubmit}>
           <label>First Name: </label>
@@ -56,4 +60,4 @@ class NewBowmaker extends Component {
   }
 }
 
-export default NewBowmaker
+export default connect(null, {createBowmaker})(NewBowmaker)
