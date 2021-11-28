@@ -1,7 +1,8 @@
 class BowmakersController < ApplicationController
   def index
     bowmakers = Bowmaker.all
-    render json: bowmakers, :except => [:created_at, :updated_at]
+    ordered_makers = bowmakers.sort_by{|maker| maker[:last_name]}
+    render json: ordered_makers, :except => [:created_at, :updated_at]
   end
 
   def create
