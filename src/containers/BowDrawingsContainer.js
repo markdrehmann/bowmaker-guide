@@ -16,7 +16,7 @@ function BowDrawingsContainer(props) {
 
   const renderDrawings = () => {
     return props.drawings.map(drawing => <BowDrawing drawing={drawing} key={drawing.id} />)
-  }
+  } // return something like "No drawings for this maker" if there aren't any
 
   return (
     <>

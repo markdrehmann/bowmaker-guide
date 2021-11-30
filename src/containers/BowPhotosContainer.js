@@ -16,7 +16,7 @@ function BowPhotosContainer(props) {
 
   const renderPhotos = () => {
     return props.photos.map(photo => <BowPhoto photo={photo} key={photo.id} />)
-  }
+  } // return something like "No photos for this bowmaker" if there aren't any
 
   return (
     <>
