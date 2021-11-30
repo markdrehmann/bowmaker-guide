@@ -1,6 +1,5 @@
-Create a comments section / component?
+Create a comments section / component? like a forum?
 
-Make a form page?
 
 add more bowmakers and drawings
 
