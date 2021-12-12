@@ -19,7 +19,11 @@ function BowDrawingsContainer(props) {
   // } // return something like "No drawings for this maker" if there aren't any
 
   const renderDrawings = () => {
-    return props.drawings.map(drawing => <BowDrawing drawing={drawing} key={drawing.id} />)
+    if (props.drawings) {
+      return props.drawings.map(drawing => <BowDrawing drawing={drawing} key={drawing.id} />)
+    } else {
+      return <h3>No Drawings of this maker's bows</h3>
+    }
   } 
 
   return (
