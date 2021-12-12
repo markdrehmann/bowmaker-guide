@@ -14,9 +14,13 @@ function BowDrawingsContainer(props) {
     props.getDrawings(bowmaker.id)
   }, []) // eslint-disable-line react-hooks/exhaustive-deps
 
+  // const renderDrawings = () => {
+  //   return props.drawings.map(drawing => <BowDrawing drawing={drawing} key={drawing.id} />)
+  // } // return something like "No drawings for this maker" if there aren't any
+
   const renderDrawings = () => {
     return props.drawings.map(drawing => <BowDrawing drawing={drawing} key={drawing.id} />)
-  } // return something like "No drawings for this maker" if there aren't any
+  } 
 
   return (
     <>
