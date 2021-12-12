@@ -14,10 +14,6 @@ function BowPhotosContainer(props) {
     props.getPhotos(bowmaker.id)
   }, []) // eslint-disable-line react-hooks/exhaustive-deps
 
-  // const renderPhotos = () => {
-  //   return props.photos.map(photo => <BowPhoto photo={photo} key={photo.id} />)
-  // } // return something like "No photos for this bowmaker" if there aren't any
-
   const renderPhotos = () => {
     if (props.photos.length === 0) {
       return <h3>No Photos of this maker's bows!</h3>
