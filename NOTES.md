@@ -10,6 +10,3 @@ or should forum just be one long thread?
 
 ---
 add more bowmakers and drawings
-
-
-FIX? add assets folder to src for images instead of using fetch to get them?
