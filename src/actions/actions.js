@@ -6,7 +6,7 @@ export const getBowmakers = () => {
       .then(bowmakers => {
         if (bowmakers.errors) {
           alert(bowmakers.errors)
-          // dispatch({type: 'FAILED_REQUEST'})
+          dispatch({type: 'FAILED_REQUEST'})
         } else {
           // console.log("inside getBowmakers action in actions.js", bowmakers)
           dispatch({type: 'GET_BOWMAKERS', bowmakers})
@@ -25,7 +25,7 @@ export const getDrawings = (makerId) => {
       .then(drawings => {
         if (drawings.errors) {
           alert(drawings.errors)
-          // dispatch({type: 'FAILED_REQUEST'})
+          dispatch({type: 'FAILED_REQUEST'})
         } else {
           maker_drawings = drawings.filter(d => d.bowmaker_id === makerId)
           // console.log("inside getDrawings action in actions.js", maker_drawings)
@@ -45,7 +45,7 @@ export const getPhotos = (makerId) => {
       .then(photos => {
         if (photos.errors) {
           alert(photos.errors)
-          // dispatch({type: 'FAILED_REQUEST'})
+          dispatch({type: 'FAILED_REQUEST'})
         } else {
           maker_photos = photos.filter(p => p.bowmaker_id === makerId)
           // console.log("inside getPhotos action in actions.js", maker_photos)
