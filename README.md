@@ -20,6 +20,8 @@ Switch to the `/bowmaker-guide`, or main directory and run:
 
 `npm start`
 
+Navigate to `http://localhost:3000/makers`
+
 ### Usage
 
 Usage of this application is for entertainment and educational purposes.
