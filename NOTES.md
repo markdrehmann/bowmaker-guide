@@ -11,4 +11,4 @@ or should forum just be one long thread?
 ---
 add more bowmakers and drawings
 
-Today's project: add drawing photos to project directory?
+Today's project: add drawing photos to project directory? - Sartory and Adam are good, redo Tourte and Persoit
