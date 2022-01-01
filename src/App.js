@@ -31,6 +31,8 @@ function App(props) {
             <Route exact path='/makers/:id/bow_drawings' element={<BowDrawingsContainer />} />
             <Route exact path='/makers/:id/bow_photos' element={<BowPhotosContainer />} />
             <Route exact path='/makers/new/hidden_admin' element={<NewBowmaker />} />
+            <Route exact path='/drawings/new/hidden_admin' element={<NewDrawing />} />
+            <Route exact path='/photos/new/hidden_admin' element={<NewPhoto />} />
           </Routes>
         </Router>
       </div>
