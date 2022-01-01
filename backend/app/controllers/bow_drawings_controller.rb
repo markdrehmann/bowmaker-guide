@@ -18,5 +18,4 @@ class BowDrawingsController < ApplicationController
       render json: { errors: bowmaker.errors.full_messages}
     end
   end
-  end
 end
