@@ -80,3 +80,28 @@ export const createBowmaker = (bowmaker) => {
       .catch(console.log)
   }
 }
+
+export const createDrawing = (drawing) => {
+  return (dispatch) => {
+    dispatch({type: 'LOADING'})
+    fetch("http://localhost:3001/bow_drawings", {
+      method: "POST",
+      headers: {
+        "Accept": "application/json",
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify(drawing)
+    })
+      .then(res => res.json())
+      .then(response => {
+        if (response.errors) {
+          alert(response.errors)
+          dispatch({type: 'FAILED_REQUEST'})
+        } else {
+          dispatch({type: 'CREATE_DRAWING', response})
+          alert("Drawing Created")
+        }
+      })
+      .catch(console.log)
+  }
+}

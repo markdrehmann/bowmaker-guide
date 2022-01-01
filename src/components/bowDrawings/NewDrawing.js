@@ -6,7 +6,8 @@ import { createDrawing } from '../../actions/actions';
 class NewDrawing extends Component {
   state = {
     url: '',
-    title: ''
+    title: '',
+    makerId: ''
   }
 
   handleChange = event => {
@@ -20,7 +21,8 @@ class NewDrawing extends Component {
     this.props.createDrawing(this.state);
     this.setState({
       url: '',
-      title: ''
+      title: '',
+      makerId: ''
     })
   }
 
@@ -36,6 +38,8 @@ class NewDrawing extends Component {
           <input type='text' autoComplete='off' name='url' value={this.state.url} onChange={this.handleChange}/><br/><br/>
           <label>Title: </label>
           <input type='text' autoComplete='off' name='title' value={this.state.title} onChange={this.handleChange}/><br/><br/>
+          <label>Maker ID: </label>
+          <input type='integer' autoComplete='off' name='makerId' value={this.state.makerId} onChange={this.handleChange}/><br/><br/>
 
           <input type='submit' value='Create this sucker'/>
         </form>

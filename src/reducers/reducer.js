@@ -22,6 +22,12 @@ function reducer(state = {
         bowmakers: [...state.bowmakers, action.response],
         loading: false
       }
+    case 'CREATE_DRAWING':
+      return {
+        ...state,
+        bowmakers: [...state.bowmakers, action.response],
+        loading: false
+      }
     case 'GET_DRAWINGS':
       return {
         ...state,

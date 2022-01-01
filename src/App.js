@@ -9,6 +9,7 @@ import ShowBowmaker from './components/bowmakers/ShowBowmaker';
 import BowDrawingsContainer from './containers/BowDrawingsContainer';
 import BowPhotosContainer from './containers/BowPhotosContainer';
 import NewBowmaker from './components/bowmakers/NewBowmaker';
+import NewDrawing from './components/bowDrawings/NewDrawing';
 
 function App(props) {
   const handleLoading = () => {
@@ -32,7 +33,7 @@ function App(props) {
             <Route exact path='/makers/:id/bow_photos' element={<BowPhotosContainer />} />
             <Route exact path='/makers/new/hidden_admin' element={<NewBowmaker />} />
             <Route exact path='/drawings/new/hidden_admin' element={<NewDrawing />} />
-            <Route exact path='/photos/new/hidden_admin' element={<NewPhoto />} />
+            {/* <Route exact path='/photos/new/hidden_admin' element={<NewPhoto />} /> */}
           </Routes>
         </Router>
       </div>
