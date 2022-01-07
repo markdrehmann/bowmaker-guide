@@ -11,5 +11,7 @@ or should forum just be one long thread?
 ---
 add more bowmakers and drawings - use the bowmakers that have drawings in directory
 
+Test the "add new drawing" page to make sure it works properly
+
 
 add a page for new photos?
