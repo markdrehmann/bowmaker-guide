@@ -9,9 +9,7 @@ or should forum just be one long thread?
 - potentially, each conversation gets archived at the end of a day, or at like, 3am?
 
 ---
-add more bowmakers and drawings
-
-Today's project: add drawing photos to database? - Sartory and Adam are good, redo Tourte and Persoit
+add more bowmakers and drawings - use the bowmakers that have drawings in directory
 
 
 add a page for new photos?
