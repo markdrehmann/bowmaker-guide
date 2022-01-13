@@ -13,5 +13,5 @@ add more bowmakers and drawings - use the bowmakers that have drawings in direct
 
 Test the "add new drawing" page to make sure it works properly
 
-
+should i keep working on this project, or start a new one... a portfolio website?
 add a page for new photos?
