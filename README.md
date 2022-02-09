@@ -1,6 +1,6 @@
 # The Bowmaker's Guide
 
-Welcome to the Bowmaker's Guide! This app was built with the intention to create a database of bowmakers, and photos and drawings of their bows, as well as the ability to comment on them. This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app) on the frontend, and with a Rails API backend.
+Welcome to the Bowmaker's Guide! This app was built with the intention to create a database of bowmakers, and photos and drawings of their bows, as well as the ability to comment on them. This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app) on the frontend, and a Rails API backend.
 
 ### Installation
 
